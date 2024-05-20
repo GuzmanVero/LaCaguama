@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaCaguamaBackend", "LaCaguamaBackend\LaCaguamaBackend.csproj", "{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaCaguamaFrontend", "LaCaguamaFrontend\LaCaguamaFrontend.csproj", "{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DF09498-247B-488C-8635-11AFD2EC6802}
+	EndGlobalSection
+EndGlobal

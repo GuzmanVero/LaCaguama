@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/agregarBebida.css" />
+    <title>Agregar</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../Imagen/alcohol-1961542_1920.jpg" alt="La Caguama Logo">
+        </div>
+        <div class="menu">
+        <a href="@Url.Action("Menu", "Home")" class="menu-item">Menú</a>
+        <a href="@Url.Action("Ordenes", "Orders")" class="menu-item">Ordenes</a>
+        <a href="@Url.Action("Historial", "History")" class="menu-item">Historial</a>
+        <a href="@Url.Action("Inventario", "Inventario")" class="menu-item">Inventario</a>
+        <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Agregar Bebida</h1>
+        <form method="post" action="@Url.Action("Agregar", "Imventario")">
+            <input type="text" name="nombreBebida" placeholder="Nombre de la Bebida" required>
+            <input type="number" name="stock" placeholder="Stock" required>
+            <input type="text" name="nombreProveedor" placeholder="Nombre del Proveedor" required>
+            <input type="text" name="tipoCategoria" placeholder="Tipo de Categoría" required>
+            <input type="text" name="precioUnitario" placeholder="Precio Unitario" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

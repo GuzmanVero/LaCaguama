@@ -1,0 +1,44 @@
+﻿body {
+    background-image: url('../Imagen/alcohol-1961542_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Ancho del sidebar */
+    height: 75vh; /* Altura completa de la ventana */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto 20px; /* Centrar logo y dar espacio debajo */
+    width: 80%; /* Ajusta el tamaño del logo */
+}
+
+.menu-item {
+    display: block;
+    background-color: #c0a080; /* Color de fondo de los botones */
+    color: white; /* Color de texto */
+    padding: 10px 20px;
+    margin: 5px 0; /* Espacio entre botones */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Remover subrayado */
+    font-size: 16px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+.menu-item:hover {
+        background-color: #a07658; /* Color al pasar el mouse */
+        color: #FFF;
+    }
+.content {
+    margin-left: 220px; /* Ajusta esto según el ancho de tu sidebar */
+}
+

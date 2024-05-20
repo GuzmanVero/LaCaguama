@@ -1,0 +1,6 @@
+@LaCaguamaBackend_HostAddress = http://localhost:5109
+
+GET {{LaCaguamaBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

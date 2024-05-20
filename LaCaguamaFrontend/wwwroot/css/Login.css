@@ -1,0 +1,55 @@
+﻿.login-container {
+    background: url('../Imagen/alcohol-1961542_1920.jpg') no-repeat center center;
+    background-size: cover;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.8); /* Ajustar la opacidad y color según necesidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: #FFF; /* Color del texto */
+    width: 300px; /* Ajustar según el diseño */
+    margin: auto;
+}
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #FFF; /* Color del texto */
+}
+.login-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparencia del input */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Color del texto dentro del input */
+}
+.form-control::placeholder { /* Estilos para el texto del placeholder */
+    color: white;
+    opacity: 0.7; /* Hacer el placeholder más claro */
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #ffc107; /* Color del botón */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
