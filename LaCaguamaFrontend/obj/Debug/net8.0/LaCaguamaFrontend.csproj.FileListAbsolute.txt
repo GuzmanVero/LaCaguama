@@ -225,3 +225,4 @@ C:\Users\marce\source\repos\LaCaguama\LaCaguamaFrontend\obj\Debug\net8.0\LaCagua
 C:\Users\marce\source\repos\LaCaguama\LaCaguamaFrontend\obj\Debug\net8.0\ref\LaCaguamaFrontend.dll
 C:\Users\marce\source\repos\LaCaguama\LaCaguamaFrontend\bin\Debug\net8.0\System.Net.Http.Formatting.dll
 C:\Users\marce\source\repos\LaCaguama\LaCaguamaFrontend\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\marce\source\repos\LaCaguama\LaCaguamaFrontend\obj\Debug\net8.0\LaCaguamaFrontend.sourcelink.json

@@ -3,48 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\marce\\source\\repos\\LaCaguama\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\views\\inventario\\agregar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\views\\inventario\\agregar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\wwwroot\\css\\agregarbebida.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\wwwroot\\css\\agregarbebida.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}|LaCaguamaBackend\\LaCaguamaBackend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamabackend\\domain\\interface\\ibebidaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}|LaCaguamaBackend\\LaCaguamaBackend.csproj|solutionrelative:lacaguamabackend\\domain\\interface\\ibebidaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\wwwroot\\css\\proveedor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\wwwroot\\css\\proveedor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\views\\inventario\\proveedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\views\\inventario\\proveedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\views\\inventario\\inventario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\views\\inventario\\inventario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\models\\inventariobebidamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\models\\inventariobebidamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}|LaCaguamaBackend\\LaCaguamaBackend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamabackend\\controllers\\bebidacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}|LaCaguamaBackend\\LaCaguamaBackend.csproj|solutionrelative:lacaguamabackend\\controllers\\bebidacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}|LaCaguamaBackend\\LaCaguamaBackend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamabackend\\application\\service\\bebidaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}|LaCaguamaBackend\\LaCaguamaBackend.csproj|solutionrelative:lacaguamabackend\\application\\service\\bebidaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}|LaCaguamaBackend\\LaCaguamaBackend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamabackend\\domain\\models\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6FA05DD-ACEE-47ED-9787-1F1BFFC8BFED}|LaCaguamaBackend\\LaCaguamaBackend.csproj|solutionrelative:lacaguamabackend\\domain\\models\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,22 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IBebidaService.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\Domain\\Interface\\IBebidaService.cs",
-              "RelativeDocumentMoniker": "LaCaguamaBackend\\Domain\\Interface\\IBebidaService.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\Domain\\Interface\\IBebidaService.cs",
-              "RelativeToolTip": "LaCaguamaBackend\\Domain\\Interface\\IBebidaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T14:49:49.573Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -80,132 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "agregarBebida.css",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\agregarBebida.css",
-              "RelativeDocumentMoniker": "LaCaguamaFrontend\\wwwroot\\css\\agregarBebida.css",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\agregarBebida.css",
-              "RelativeToolTip": "LaCaguamaFrontend\\wwwroot\\css\\agregarBebida.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-18T15:26:52.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Agregar.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Views\\Inventario\\Agregar.cshtml",
-              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Views\\Inventario\\Agregar.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Views\\Inventario\\Agregar.cshtml",
-              "RelativeToolTip": "LaCaguamaFrontend\\Views\\Inventario\\Agregar.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-18T14:56:23.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Proveedor.css",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Proveedor.css",
-              "RelativeDocumentMoniker": "LaCaguamaFrontend\\wwwroot\\css\\Proveedor.css",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Proveedor.css",
-              "RelativeToolTip": "LaCaguamaFrontend\\wwwroot\\css\\Proveedor.css",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAC4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-18T14:57:15.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Proveedor.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Views\\Inventario\\Proveedor.cshtml",
-              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Views\\Inventario\\Proveedor.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Views\\Inventario\\Proveedor.cshtml",
-              "RelativeToolTip": "LaCaguamaFrontend\\Views\\Inventario\\Proveedor.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-18T14:56:27.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Inventario.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Views\\Inventario\\Inventario.cshtml",
-              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Views\\Inventario\\Inventario.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Views\\Inventario\\Inventario.cshtml",
-              "RelativeToolTip": "LaCaguamaFrontend\\Views\\Inventario\\Inventario.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-18T14:56:25.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InventarioController.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Controllers\\InventarioController.cs",
-              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Controllers\\InventarioController.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Controllers\\InventarioController.cs",
-              "RelativeToolTip": "LaCaguamaFrontend\\Controllers\\InventarioController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Controllers\\PedidosController.cs",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "LaCaguamaFrontend\\Controllers\\PedidosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T14:56:16.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InventariobebidaModel.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Models\\InventariobebidaModel.cs",
-              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Models\\InventariobebidaModel.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Models\\InventariobebidaModel.cs",
-              "RelativeToolTip": "LaCaguamaFrontend\\Models\\InventariobebidaModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T14:54:48.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BebidaController.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\Controllers\\BebidaController.cs",
-              "RelativeDocumentMoniker": "LaCaguamaBackend\\Controllers\\BebidaController.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\Controllers\\BebidaController.cs",
-              "RelativeToolTip": "LaCaguamaBackend\\Controllers\\BebidaController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T14:53:29.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BebidaService.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\Application\\Service\\BebidaService.cs",
-              "RelativeDocumentMoniker": "LaCaguamaBackend\\Application\\Service\\BebidaService.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\Application\\Service\\BebidaService.cs",
-              "RelativeToolTip": "LaCaguamaBackend\\Application\\Service\\BebidaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T14:52:41.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Bebidas.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\Domain\\Models\\Bebidas.cs",
-              "RelativeDocumentMoniker": "LaCaguamaBackend\\Domain\\Models\\Bebidas.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\Domain\\Models\\Bebidas.cs",
-              "RelativeToolTip": "LaCaguamaBackend\\Domain\\Models\\Bebidas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T14:49:00.307Z",
+              "WhenOpened": "2024-05-22T03:00:36.11Z",
               "EditorCaption": ""
             }
           ]
