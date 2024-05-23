@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c9XHj3nKLoDEEOJu3biUoJlkUT+3LcL/gskvz3orokM=",
+  "Hash": "ZvYQkliNJ2VRQnRmCUq2yIL5CqMJ7gzz0w7g5ziG/WY=",
   "Source": "LaCaguamaFrontend",
   "BasePath": "_content/LaCaguamaFrontend",
   "Mode": "Default",
@@ -74,6 +74,25 @@
       "OriginalItemSpec": "wwwroot\\css\\agregarBebida.css"
     },
     {
+      "Identity": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Historial.css",
+      "SourceId": "LaCaguamaFrontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\",
+      "BasePath": "_content/LaCaguamaFrontend",
+      "RelativePath": "css/Historial.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Historial.css"
+    },
+    {
       "Identity": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Home.css",
       "SourceId": "LaCaguamaFrontend",
       "SourceType": "Discovered",
@@ -129,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Menu.css",
+      "SourceId": "LaCaguamaFrontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\",
+      "BasePath": "_content/LaCaguamaFrontend",
+      "RelativePath": "css/Menu.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Menu.css"
     },
     {
       "Identity": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Proveedor.css",

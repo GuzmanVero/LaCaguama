@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Imagen\\alcohol-1961542_1920.jpg"
     },
     {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Historial.css",
+      "PackagePath": "staticwebassets\\css\\Historial.css"
+    },
+    {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Home.css",
       "PackagePath": "staticwebassets\\css\\Home.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Menu.css",
+      "PackagePath": "staticwebassets\\css\\Menu.css"
     },
     {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Proveedor.css",

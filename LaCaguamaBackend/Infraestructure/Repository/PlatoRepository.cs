@@ -16,11 +16,13 @@ namespace LaCaguamaBackend.Infraestructure.Repository
         public async Task<List<PlatoDto>> GetAllPlato()
         {
             var query = from e in _context.Platos
+                        join t in _context.Extras on e.Extra_ID equals t.ExtraID
                         select new PlatoDto
                         {
                             NombrePlato = e.Nombre_Plato,
                             PrecioUnitario = e.Precio_Unitario,
-                            Descripcion = e.Descripcion
+                            Descripcion = e.Descripcion,
+                            NombreExtra = t.Nombre
                         };
             return await query.ToListAsync();
         }

@@ -135,3 +135,4 @@ C:\Users\marce\source\repos\LaCaguama\LaCaguamaBackend\obj\Debug\net8.0\LaCaguam
 C:\Users\marce\source\repos\LaCaguama\LaCaguamaBackend\obj\Debug\net8.0\LaCaguamaBackend.genruntimeconfig.cache
 C:\Users\marce\source\repos\LaCaguama\LaCaguamaBackend\obj\Debug\net8.0\ref\LaCaguamaBackend.dll
 C:\Users\marce\source\repos\LaCaguama\LaCaguamaBackend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\marce\source\repos\LaCaguama\LaCaguamaBackend\obj\Debug\net8.0\LaCaguamaBackend.sourcelink.json

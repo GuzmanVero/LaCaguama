@@ -1,4 +1,4 @@
-﻿
+﻿ @model HistorialFacturaModel
 @{
     Layout = null;
 }
@@ -8,8 +8,65 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/Historial.css" />   
     <title>Historial</title>
 </head>
 <body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../Imagen/alcohol-1961542_1920.jpg" alt="La Caguama Logo">
+        </div>
+        <a href="@Url.Action("Menu", "Menu")" class="menu-item">Menú</a>
+        <a href="@Url.Action("Ordenes", "Orders")" class="menu-item">Ordenes</a>
+        <a href="@Url.Action("Historial", "Factura")" class="menu-item">Historial</a>
+        <a href="@Url.Action("Inventario", "Inventario")" class="menu-item">Inventario</a>
+        <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
+    </div>
+    <div class="form-container">
+        <form class="form-Fecha">
+            <div class="input-group">
+                <label for="fechaInicial">Fecha Inicial</label>
+                <input type="date" id="fechaInicial" name="fechaInicial">
+            </div>
+            <div class="input-group">
+                <label for="fechaFinal">Fecha Final</label>
+                <input type="date" id="fechaFinal" name="fechaFinal">
+            </div>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+    <div class="historial">
+        @if (Model.Historial != null && Model.Historial.Any())
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Día</th>
+                        <th>Nombre</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Historial)
+                    {
+                        <tr>
+                            <td>@item.MesFactura</td>
+                            <td>@item.DiaFactura</td>
+                            <td>@item.Nombre</td>
+                            <td>@item.Total</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No hay datos disponibles.</p>
+        }
+    </div>
+    <div class="buttons">
+        <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
+    </div>
 </body>
 </html>

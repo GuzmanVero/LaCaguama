@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\marce\\source\\repos\\LaCaguama\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\views\\factura\\historial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\views\\factura\\historial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|c:\\users\\marce\\source\\repos\\lacaguama\\lacaguamafrontend\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C5F3601-B301-4B98-BFA2-3DA48BB45A85}|LaCaguamaFrontend\\LaCaguamaFrontend.csproj|solutionrelative:lacaguamafrontend\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PedidosController.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Controllers\\PedidosController.cs",
-              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Controllers\\PedidosController.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Controllers\\PedidosController.cs",
-              "RelativeToolTip": "LaCaguamaFrontend\\Controllers\\PedidosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Title": "Historial.cshtml",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Views\\Factura\\Historial.cshtml",
+              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Views\\Factura\\Historial.cshtml",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Views\\Factura\\Historial.cshtml",
+              "RelativeToolTip": "LaCaguamaFrontend\\Views\\Factura\\Historial.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-23T04:44:01.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacturaController.cs",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Controllers\\FacturaController.cs",
+              "RelativeDocumentMoniker": "LaCaguamaFrontend\\Controllers\\FacturaController.cs",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\Controllers\\FacturaController.cs",
+              "RelativeToolTip": "LaCaguamaFrontend\\Controllers\\FacturaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T03:00:36.11Z",
+              "WhenOpened": "2024-05-23T04:43:44.99Z",
               "EditorCaption": ""
             }
           ]
