@@ -24,16 +24,21 @@
         <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
         </div>
     </div>
+    <h1>Agregar Bebida</h1>
     <div class="main-content">
-        <h1>Agregar Bebida</h1>
-        <form method="post" action="@Url.Action("Agregar", "Imventario")">
+        <div class="formu">
+        <form method="post" action="@Url.Action("Agregar", "Imventario")" class="form-bebida">
             <input type="text" name="nombreBebida" placeholder="Nombre de la Bebida" required>
             <input type="number" name="stock" placeholder="Stock" required>
             <input type="text" name="nombreProveedor" placeholder="Nombre del Proveedor" required>
             <input type="text" name="tipoCategoria" placeholder="Tipo de Categoría" required>
             <input type="text" name="precioUnitario" placeholder="Precio Unitario" required>
-            <button type="submit">Enviar</button>
+            <button type="submit">Guardar</button>
         </form>
+        </div>
+    </div>
+    <div class="buttons">
+        <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
     </div>
 </body>
 </html>
