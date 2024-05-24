@@ -8,8 +8,38 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/Mesa.css" />
     <title>Mesas</title>
 </head>
 <body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../Imagen/alcohol-1961542_1920.jpg" alt="La Caguama Logo">
+        </div>
+        <a href="@Url.Action("Menu", "Menu")" class="menu-item">Menú</a>
+        <a href="@Url.Action("Mesas", "Pedidos")" class="menu-item">Ordenes</a>
+        <a href="@Url.Action("Historial", "Factura")" class="menu-item">Historial</a>
+        <a href="@Url.Action("Inventario", "Inventario")" class="menu-item">Inventario</a>
+        <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Mesas</h1>
+        </div>
+        <div class="tables">
+            <div class="table" id="table-1"><a href="@Url.Action("Pedido", "Pedidos")" class="btn">1</a></div>
+            <div class="table" id="table-2"><a href="@Url.Action("Pedido", "Pedidos")" class="btn">2</a></div>
+            <div class="table" id="table-3"><a href="@Url.Action("Pedido", "Pedidos")" class="btn">3</a></div>
+            <div class="table" id="table-4"><a href="@Url.Action("Pedido", "Pedidos")" class="btn">4</a></div>
+            <div class="table" id="table-5"><a href="@Url.Action("Pedido", "Pedidos")" class="btn">5</a></div>
+            <div class="table" id="table-6"><a href="@Url.Action("Pedido", "Pedidos")" class="btn">6</a></div>
+            <div class="table" id="table-7"><a href="@Url.Action("Pedido", "Pedidos")" class="btn">7</a></div>
+            <div class="table" id="table-8"><a href="@Url.Action("Pedido", "Pedidos")" class="btn">8</a></div>
+        </div>
+        <div class="buttons">
+            <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
+        </div>
+    </div>
 </body>
 </html>

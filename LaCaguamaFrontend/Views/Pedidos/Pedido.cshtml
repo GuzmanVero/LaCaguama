@@ -1,4 +1,4 @@
-﻿
+﻿@model MenuModel
 @{
     Layout = null;
 }
@@ -8,8 +8,134 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/AddPedido.css" />
     <title>Pedido</title>
 </head>
 <body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../Imagen/alcohol-1961542_1920.jpg" alt="La Caguama Logo">
+        </div>
+        <a href="@Url.Action("Menu", "Menu")" class="menu-item">Menú</a>
+        <a href="@Url.Action("Mesas", "Pedidos")" class="menu-item">Ordenes</a>
+        <a href="@Url.Action("Historial", "Factura")" class="menu-item">Historial</a>
+        <a href="@Url.Action("Inventario", "Inventario")" class="menu-item">Inventario</a>
+        <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
+    </div>
+    <div class="main-content">
+        <h2>Menu</h2>
+        <div class="category-container">
+            <div class="col-md-6">
+                <div class="panel with-nav-tabs panel-info">
+                    <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1info" data-toggle="tab">Bebidas</a></li>
+                            <li><a href="#tab2info" data-toggle="tab">Platos</a></li>
+                            <li><a href="#tab3info" data-toggle="tab">Extras</a></li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-content">
+
+                            <div class="tab-pane fade in active" id="tab1info">
+                                @if (Model.bebida != null && Model.bebida.Any())
+                                {
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Categoria</th>
+                                                <th>Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.bebida)
+                                            {
+                                                <tr>
+                                                    <td>@item.NombreBebida</td>
+                                                    <td>@item.TipoCategoria</td>
+                                                    <td>@item.PrecioUnitario</td>
+                                                    <td><button class="btn">Agregar</button></td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                }
+                                else
+                                {
+                                    <p>No hay datos disponibles.</p>
+                                }
+                            </div>
+
+                            <div class="tab-pane fade" id="tab2info">
+                                @if (Model.Plato != null && Model.Plato.Any())
+                                {
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Descripcion</th>
+                                                <th>Precio</th>
+                                                <th>Extra</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.Plato)
+                                            {
+                                                <tr>
+                                                    <td>@item.NombrePlato</td>
+                                                    <td>@item.Descripcion</td>
+                                                    <td>@item.PrecioUnitario</td>
+                                                    <td>@item.NombreExtra</td>
+                                                    <td><button class="btn">Agregar</button></td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                }
+                                else
+                                {
+                                    <p>No hay datos disponibles.</p>
+                                }
+                            </div>
+
+                            <div class="tab-pane fade" id="tab3info">
+                                @if (Model.Extra != null && Model.Extra.Any())
+                                {
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.Extra)
+                                            {
+                                                <tr>
+                                                    <td>@item.Nombre</td>
+                                                    <td>@item.PrecioUnitario</td>
+                                                    <td><button class="btn">Agregar</button></td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                }
+                                else
+                                {
+                                    <p>No hay datos disponibles.</p>
+                                }
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

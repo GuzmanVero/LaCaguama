@@ -1,4 +1,4 @@
-﻿ @model ProveedorModel
+﻿
 @{
     Layout = null;
 }
@@ -8,8 +8,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="~/css/Proveedor.css" />
-    <title>Proveedor</title>
+    <title>Menus</title>
 </head>
 <body>
     <div class="sidebar">
@@ -22,26 +21,26 @@
         <a href="@Url.Action("Inventario", "Inventario")" class="menu-item">Inventario</a>
         <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
     </div>
-    <div class="proveedor">
-        @if (Model.Proveedores != null && Model.Proveedores.Any())
+    <div class="historial">
+        @if (Model.menus != null && Model.menus.Any())
         {
             <table class="table table-striped">
                 <thead>
                     <tr>
+                        <th>Mes</th>
+                        <th>Día</th>
                         <th>Nombre</th>
-                        <th>NombreBebida</th>
-                        <th>Telefono</th>
-                        <th>Direccion</th>
+                        <th>Total</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.Proveedores)
+                    @foreach (var item in Model.menus)
                     {
                         <tr>
+                            <td>@item.MesFactura</td>
+                            <td>@item.DiaFactura</td>
                             <td>@item.Nombre</td>
-                            <td>@item.NombreBebida</td>
-                            <td>@item.Telefono</td>
-                            <td>@item.Direccion</td>
+                            <td>@item.Total</td>
                         </tr>
                     }
                 </tbody>
@@ -54,7 +53,6 @@
     </div>
     <div class="buttons">
         <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
-        <a href="@Url.Action("Inventario", "Inventario")" class="btn">Regresar</a>
     </div>
 </body>
 </html>

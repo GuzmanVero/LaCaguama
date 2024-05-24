@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Imagen\\alcohol-1961542_1920.jpg"
     },
     {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\AddPedido.css",
+      "PackagePath": "staticwebassets\\css\\AddPedido.css"
+    },
+    {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Historial.css",
       "PackagePath": "staticwebassets\\css\\Historial.css"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\agregarBebida.css",
       "PackagePath": "staticwebassets\\css\\agregarBebida.css"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\mesa.css",
+      "PackagePath": "staticwebassets\\css\\mesa.css"
     },
     {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\site.css",

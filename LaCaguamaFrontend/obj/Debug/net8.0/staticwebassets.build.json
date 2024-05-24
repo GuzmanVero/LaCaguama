@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZvYQkliNJ2VRQnRmCUq2yIL5CqMJ7gzz0w7g5ziG/WY=",
+  "Hash": "01spXoLlt6KERdNJJbeiB++7c+jqjCKsphDM4etzrV4=",
   "Source": "LaCaguamaFrontend",
   "BasePath": "_content/LaCaguamaFrontend",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LaCaguamaFrontend.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\AddPedido.css",
+      "SourceId": "LaCaguamaFrontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\",
+      "BasePath": "_content/LaCaguamaFrontend",
+      "RelativePath": "css/AddPedido.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AddPedido.css"
     },
     {
       "Identity": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\agregarBebida.css",
@@ -167,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Menu.css"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\mesa.css",
+      "SourceId": "LaCaguamaFrontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\",
+      "BasePath": "_content/LaCaguamaFrontend",
+      "RelativePath": "css/mesa.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mesa.css"
     },
     {
       "Identity": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Proveedor.css",

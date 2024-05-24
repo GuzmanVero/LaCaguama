@@ -1,0 +1,103 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Imagen/alcohol-1961542_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+.menu-item {
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #c0a080;
+    border-radius: 5px;
+    display: block;
+}
+
+.menu-item:hover {
+        background-color: #a07658;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #d4b251;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tables {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.table {
+    width: 250px;
+    height: 250px;
+    background-image: url('../Imagen/alcohol-1961542_1920.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 5px;
+}
+
+.buttons {
+    position: fixed;
+    bottom: 10px;
+    left: 220px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #b22121;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+        background-color: #8a1717;
+}
