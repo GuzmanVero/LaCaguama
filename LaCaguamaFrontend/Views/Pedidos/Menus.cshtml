@@ -1,6 +1,7 @@
 ﻿@model MenusModel
 @{
     Layout = null;
+    int tableId = ViewBag.TableId;
 }
 
 <!DOCTYPE html>
@@ -8,6 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="~/css/Menus.css" />
     <title>Menus</title>
 </head>
 <body>
@@ -22,6 +24,7 @@
         <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
     </div>
     <div class="historial">
+        <h2>Menú para Mesa @tableId</h2>
         @if (Model.menu != null && Model.menu.Any())
         {
             <table class="table table-striped">
@@ -37,7 +40,7 @@
                         <tr>
                             <td>@item.NombrePlato</td>
                             <td>@item.NombreBebida</td>
-                            <td><button class="btn">Agregar</button></td>
+                            <td><button class="btn" onclick="addOrder(@tableId, '@item.NombrePlato', '@item.NombreBebida')">Agregar</button></td>
                         </tr>
                     }
                 </tbody>
@@ -48,8 +51,29 @@
             <p>No hay datos disponibles.</p>
         }
     </div>
+    <script>
+        function addOrder(tableId, plato, bebida) {
+            // Obtener los pedidos actuales del localStorage
+            let orders = JSON.parse(localStorage.getItem('orders')) || {};
+
+            // Si no hay pedidos para la mesa, inicializa un array
+            if (!Array.isArray(orders[tableId])) {
+                orders[tableId] = [];
+            }
+            // Agregar el nuevo pedido
+            orders[tableId].push({ plato: plato, bebida: bebida });
+
+            // Guardar los pedidos actualizados en el localStorage
+            localStorage.setItem('orders', JSON.stringify(orders));
+
+            //alert('Pedido agregado: ' + plato + ' con ' + bebida + ' para la mesa ' + tableId);
+        }
+    </script>
+
     <div class="buttons">
         <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
+        <a href="@Url.Action("VisualizarPedido", "Pedidos")" class="btn">Ver Pedido</a>
+        <a href="@Url.Action("Mesas", "Pedidos")" class="btn">Regresar</a>
     </div>
 </body>
 </html>

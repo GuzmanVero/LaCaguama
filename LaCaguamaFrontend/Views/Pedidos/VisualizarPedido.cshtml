@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+    ViewData["Title"] = "Pedidos";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VisualizarPedido</title>
+</head>
+<body>
+    <div id="ordersContainer">
+        <!-- Las tablas se agregarán aquí mediante JavaScript -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Obtener los pedidos del localStorage
+            let orders = JSON.parse(localStorage.getItem('orders')) || {};
+
+            // Referencia al contenedor de órdenes
+            const container = document.getElementById('ordersContainer');
+
+            // Crear una tabla por cada mesa con pedidos
+            for (const tableId in orders) {
+                if (orders.hasOwnProperty(tableId)) {
+                    const tableOrders = orders[tableId];
+
+                    // Asegurarse de que tableOrders sea un array
+                    if (Array.isArray(tableOrders)) {
+                        // Crear el título de la mesa
+                        const title = document.createElement('h3');
+                        title.innerText = 'Mesa ' + tableId;
+                        container.appendChild(title);
+
+                        // Crear la tabla
+                        const table = document.createElement('table');
+                        table.classList.add('table', 'table-striped');
+
+                        // Crear el encabezado de la tabla
+                        const thead = document.createElement('thead');
+                        thead.innerHTML = `<tr><th>Plato</th><th>Bebida</th></tr>`;
+                        table.appendChild(thead);
+
+                        // Crear el cuerpo de la tabla
+                        const tbody = document.createElement('tbody');
+                        tableOrders.forEach(order => {
+                            const row = `<tr>
+                                    <td>${order.plato}</td>
+                                    <td>${order.bebida}</td>
+                                </tr>`;
+                            tbody.innerHTML += row;
+                        });
+                        table.appendChild(tbody);
+
+                        // Agregar la tabla al contenedor
+                        container.appendChild(table);
+                    } else {
+                        console.error(`tableOrders for tableId ${tableId} is not an array`);
+                    }
+                }
+            }
+        });
+    </script>
+    <div class="buttons">
+        <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
+        <a href="@Url.Action("Menus", "Pedidos")" class="btn">Ver Menu</a>
+        <a href="@Url.Action("Mesas", "Pedidos")" class="btn">Regresar</a>
+    </div>
+</body>
+</html>

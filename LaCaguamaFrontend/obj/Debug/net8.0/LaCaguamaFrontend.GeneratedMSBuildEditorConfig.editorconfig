@@ -17,44 +17,44 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LaCaguamaFrontend
 build_property.RootNamespace = LaCaguamaFrontend
-build_property.ProjectDir = C:\Users\Losth\OneDrive\Escritorio\LaCaguama\LaCaguamaFrontend\
+build_property.ProjectDir = C:\Users\marce\source\repos\LaCaguama\LaCaguamaFrontend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Losth\OneDrive\Escritorio\LaCaguama\LaCaguamaFrontend
+build_property.MSBuildProjectDirectory = C:\Users\marce\source\repos\LaCaguama\LaCaguamaFrontend
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Factura/Historial.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Factura/Historial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxIaXN0b3JpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Home/Index.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Home/Privacy.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Inventario/Agregar.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Inventario/Agregar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xBZ3JlZ2FyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Inventario/Inventario.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Inventario/Inventario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbnZlbnRhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Inventario/Proveedor.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Inventario/Proveedor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xQcm92ZWVkb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Login/Login.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Menu/Menu.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Menu/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -66,30 +66,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xNZXNhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Pedidos/Ordenes.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Pedidos/Ordenes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xPcmRlbmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Pedidos/Pedido.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Pedidos/Pedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xQZWRpZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Shared/Error.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Pedidos/VisualizarPedido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xWaXN1YWxpemFyUGVkaWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/_ViewImports.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/_ViewStart.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Losth/OneDrive/Escritorio/LaCaguama/LaCaguamaFrontend/Views/Shared/_Layout.cshtml]
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-33ruhjtdz0

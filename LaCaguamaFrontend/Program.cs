@@ -16,6 +16,16 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;             // Indica que la cookie es esencial
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyCorsPolicy", policy =>
+    {
+        policy.WithOrigins("https://localhost:44347")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,6 +38,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseCors("MyCorsPolicy");
 
 app.UseRouting();
 

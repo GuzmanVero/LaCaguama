@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\LaCaguamaFrontend.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\Imagen\\Picsart_24-05-23_21-20-11-938.png",
+      "PackagePath": "staticwebassets\\Imagen\\Picsart_24-05-23_21-20-11-938.png"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\Imagen\\Picsart_24-05-23_21-22-32-621.jpg",
+      "PackagePath": "staticwebassets\\Imagen\\Picsart_24-05-23_21-22-32-621.jpg"
+    },
+    {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\Imagen\\alcohol-1961542_1920.jpg",
       "PackagePath": "staticwebassets\\Imagen\\alcohol-1961542_1920.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\Imagen\\seamless-doodle-pattern-with-beer-lobsters-and-sausages-black-and-white-illustration-with-beer-theme-icons-free-vector.jpg",
+      "PackagePath": "staticwebassets\\Imagen\\seamless-doodle-pattern-with-beer-lobsters-and-sausages-black-and-white-illustration-with-beer-theme-icons-free-vector.jpg"
     },
     {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\AddPedido.css",
@@ -33,6 +45,10 @@
       "PackagePath": "staticwebassets\\css\\Menu.css"
     },
     {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Menus.css",
+      "PackagePath": "staticwebassets\\css\\Menus.css"
+    },
+    {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\css\\Proveedor.css",
       "PackagePath": "staticwebassets\\css\\Proveedor.css"
     },
@@ -51,6 +67,10 @@
     {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\js\\SearchMenu.js",
+      "PackagePath": "staticwebassets\\js\\SearchMenu.js"
     },
     {
       "Id": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\wwwroot\\js\\site.js",

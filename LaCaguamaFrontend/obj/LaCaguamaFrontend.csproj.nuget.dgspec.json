@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Losth\\OneDrive\\Escritorio\\LaCaguama\\LaCaguamaFrontend\\LaCaguamaFrontend.csproj": {}
+    "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\LaCaguamaFrontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Losth\\OneDrive\\Escritorio\\LaCaguama\\LaCaguamaFrontend\\LaCaguamaFrontend.csproj": {
+    "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\LaCaguamaFrontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Losth\\OneDrive\\Escritorio\\LaCaguama\\LaCaguamaFrontend\\LaCaguamaFrontend.csproj",
+        "projectUniqueName": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\LaCaguamaFrontend.csproj",
         "projectName": "LaCaguamaFrontend",
-        "projectPath": "C:\\Users\\Losth\\OneDrive\\Escritorio\\LaCaguama\\LaCaguamaFrontend\\LaCaguamaFrontend.csproj",
-        "packagesPath": "C:\\Users\\Losth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Losth\\OneDrive\\Escritorio\\LaCaguama\\LaCaguamaFrontend\\obj\\",
+        "projectPath": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\LaCaguamaFrontend.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaFrontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Losth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

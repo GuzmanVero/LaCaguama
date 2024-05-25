@@ -4244,19 +4244,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Losth\\.nuget\\packages\\": {}
+    "C:\\Users\\marce\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Losth\\OneDrive\\Escritorio\\LaCaguama\\LaCaguamaBackend\\LaCaguamaBackend.csproj",
+      "projectUniqueName": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\LaCaguamaBackend.csproj",
       "projectName": "LaCaguamaBackend",
-      "projectPath": "C:\\Users\\Losth\\OneDrive\\Escritorio\\LaCaguama\\LaCaguamaBackend\\LaCaguamaBackend.csproj",
-      "packagesPath": "C:\\Users\\Losth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Losth\\OneDrive\\Escritorio\\LaCaguama\\LaCaguamaBackend\\obj\\",
+      "projectPath": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\LaCaguamaBackend.csproj",
+      "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marce\\source\\repos\\LaCaguama\\LaCaguamaBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Losth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4333,7 +4333,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

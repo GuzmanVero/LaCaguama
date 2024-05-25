@@ -47,7 +47,7 @@ namespace LaCaguamaFrontend.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Menus()
+        public async Task<IActionResult> Menus(int tableId)
         {
             using (var client = new HttpClient())
             {
@@ -61,10 +61,17 @@ namespace LaCaguamaFrontend.Controllers
                     {
                         menu = data
                     };
+                    ViewBag.TableId = tableId;
                     return View(model);
                 }
             }
+            ViewBag.TableId = tableId;
             return View(new MenusModel());
+        }
+
+        public IActionResult VisualizarPedido()
+        {
+            return View();
         }
     }
 }

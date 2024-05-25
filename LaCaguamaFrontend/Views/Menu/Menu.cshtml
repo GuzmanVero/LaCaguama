@@ -44,7 +44,7 @@
                                 @if (Model.bebida != null && Model.bebida.Any())
                                 {
                                     <input type="text" id="bebidaName" placeholder="Enter bebida Name" />
-                                    <button type="submit">Consultar</button>
+                                    <button onclick="updateTable()">Consultar</button>
 
                                     <table class="table table-striped">
                                         <thead style="text-decoration:none;list-style:none;">
@@ -54,7 +54,7 @@
                                                 <th>Precio</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="bebidaTableBody">
                                             @foreach (var item in Model.bebida)
                                             {
                                                 <tr>
@@ -71,12 +71,37 @@
                                     <p>No hay datos disponibles.</p>
                                 }
                             </div>
+                            <script>
+                                const apiBaseUrl = 'https://localhost:44347/';
+
+                                function updateTable() {
+                                    const bebidaName = document.getElementById('bebidaName').value;
+
+                                    fetch(`${apiBaseUrl}Bebida/SearchBebidas?nombre=${bebidaName}`)
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            console.log(data);
+                                            const tbody = document.getElementById('bebidaTableBody');
+                                            tbody.innerHTML = '';
+
+                                            data.forEach(item => {
+                                                const row = `<tr>
+                                                    <td>${item.nombreBebida}</td>
+                                                    <td>${item.tipoCategoria}</td>
+                                                    <td>${item.precioUnitario}</td>
+                                                </tr>`;
+                                                tbody.innerHTML += row;
+                                            });
+                                        })
+                                        .catch(error => console.error('Error fetching data: ', error));
+                                }
+                            </script>
 
                             <div class="tab-pane fade" id="tab2info">
                                 @if (Model.Plato != null && Model.Plato.Any())
                                 {
                                     <input type="text" id="platoName" placeholder="Enter plato Name" />
-                                    <button type="submit">Consultar</button>
+                                    <button onclick="updateTable2()">Consultar</button>
 
                                     <table class="table table-striped">
                                         <thead>
@@ -87,7 +112,7 @@
                                                 <th>Extra</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="platoTableBody">
                                             @foreach (var item in Model.Plato)
                                             {
                                                 <tr>
@@ -105,12 +130,38 @@
                                     <p>No hay datos disponibles.</p>
                                 }
                             </div>
+                            <script>
+                                
+
+                                function updateTable2() {
+                                    const platoName = document.getElementById('platoName').value;
+
+                                    fetch(`${apiBaseUrl}Plato/SearchPlatos?nombre=${platoName}`)
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            console.log(data);
+                                            const tbody = document.getElementById('platoTableBody');
+                                            tbody.innerHTML = '';
+
+                                            data.forEach(item => {
+                                                const row = `<tr>
+                                                            <td>${item.nombrePlato}</td>
+                                                             <td>${item.descripcion}</td>
+                                                             <td>${item.precioUnitario}</td>
+                                                             <td>${item.nombreExtra}</td>
+                                                            </tr>`;
+                                                tbody.innerHTML += row;
+                                            });
+                                        })
+                                        .catch(error => console.error('Error fetching data: ', error));
+                                }
+                            </script>
 
                             <div class="tab-pane fade" id="tab3info">
                                 @if (Model.Extra != null && Model.Extra.Any())
                                 {
                                      <input type="text" id="extraName" placeholder="Enter extra Name" />
-                                    <button type="submit">Consultar</button>
+                                     <button onclick="updateTable3()">Consultar</button>
 
                                     <table class="table table-striped">
                                         <thead>
@@ -119,7 +170,7 @@
                                                 <th>Precio</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="extraTableBody">
                                             @foreach (var item in Model.Extra)
                                             {
                                                 <tr>
@@ -135,7 +186,30 @@
                                     <p>No hay datos disponibles.</p>
                                 }
                             </div>
+                            <script>
+                                
 
+                                function updateTable3() {
+                                    const extraName = document.getElementById('extraName').value;
+
+                                    fetch(`${apiBaseUrl}Extra/SearchExtras?nombre=${extraName}`)
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            console.log(data);
+                                            const tbody = document.getElementById('extraTableBody');
+                                            tbody.innerHTML = '';
+
+                                            data.forEach(item => {
+                                                const row = `<tr>
+                                                             <td>${item.nombre}</td>
+                                                             <td>${item.precioUnitario}</td>
+                                                             </tr>`;
+                                                tbody.innerHTML += row;
+                                            });
+                                        })
+                                        .catch(error => console.error('Error fetching data: ', error));
+                                }
+                            </script>
                             </div>
                         </div>
                     </div>
