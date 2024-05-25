@@ -1,4 +1,4 @@
-﻿ @model HistorialFacturaModel
+﻿@model HistorialFacturaModel
 @{
     Layout = null;
 }
@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="~/css/Historial.css" />   
+    <link rel="stylesheet" href="~/css/Historial.css" />
     <title>Historial</title>
 </head>
 <body>
@@ -38,27 +38,29 @@
     <div class="historial">
         @if (Model.Historial != null && Model.Historial.Any())
         {
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Mes</th>
-                        <th>Día</th>
-                        <th>Nombre</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model.Historial)
-                    {
+            <div class="table-container">
+                <table class="table table-striped">
+                    <thead>
                         <tr>
-                            <td>@item.MesFactura</td>
-                            <td>@item.DiaFactura</td>
-                            <td>@item.Nombre</td>
-                            <td>@item.Total</td>
+                            <th>Mes</th>
+                            <th>Día</th>
+                            <th>Nombre</th>
+                            <th>Total</th>
                         </tr>
-                    }
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Historial)
+                        {
+                            <tr>
+                                <td>@item.MesFactura</td>
+                                <td>@item.DiaFactura</td>
+                                <td>@item.Nombre</td>
+                                <td>@item.Total</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         }
         else
         {

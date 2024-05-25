@@ -3,11 +3,13 @@
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../Imagen/alcohol-1961542_1920.jpg');
+    background-image: url('../Imagen/seamless-doodle-pattern-with-beer-lobsters-and-sausages-black-and-white-illustration-with-beer-theme-icons-free-vector.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: Arial, sans-serif;
+    text-decoration:none;
+    list-style:none;
 }
 
 .sidebar {
@@ -37,41 +39,60 @@
     border-radius: 5px;
     display: block;
 }
-.menu-item:hover {
+
+    .menu-item:hover {
         background-color: #a07658;
     }
 
 .main-content {
-    margin-left: 220px;
+    margin-left: 90px;
     padding: 20px;
     min-height: 100vh;
 }
+
+    .main-content h2 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        color: snow;
+    }
 
 .category-container {
     display: flex;
     justify-content: space-around;
 }
-.panel.with-nav-tabs .panel-heading {
-    padding: 5px 5px 0 5px;
+
+.panel.with-nav-tabs {
+    width: 600px;
 }
 
-.panel.with-nav-tabs .nav-tabs {
-    border-bottom: none;
-}
+    .panel.with-nav-tabs .panel-heading {
+        width: 600px;
+        padding: 5px 5px 0 5px;
+        font-size: 16px;
+        font-weight: 500;
+    }
 
-.panel.with-nav-tabs .nav-justified {
-    margin-bottom: -1px;
-}
+    .panel.with-nav-tabs .nav-tabs {
+        border-bottom: none;
+        width: 600px
+    }
+
+    .panel.with-nav-tabs .nav-justified {
+        margin-bottom: -1px;
+    }
+
 .with-nav-tabs.panel-info .nav-tabs > li > a,
 .with-nav-tabs.panel-info .nav-tabs > li > a:hover,
 .with-nav-tabs.panel-info .nav-tabs > li > a:focus {
     color: #31708f;
 }
-.with-nav-tabs.panel-info .nav-tabs > .open > a,
-.with-nav-tabs.panel-info .nav-tabs > .open > a:hover,
-.with-nav-tabs.panel-info .nav-tabs > .open > a:focus,
-.with-nav-tabs.panel-info .nav-tabs > li > a:hover,
-.with-nav-tabs.panel-info .nav-tabs > li > a:focus {
+
+    .with-nav-tabs.panel-info .nav-tabs > .open > a,
+    .with-nav-tabs.panel-info .nav-tabs > .open > a:hover,
+    .with-nav-tabs.panel-info .nav-tabs > .open > a:focus,
+    .with-nav-tabs.panel-info .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-info .nav-tabs > li > a:focus {
         color: #31708f;
         background-color: #bce8f1;
         border-color: transparent;
@@ -85,6 +106,7 @@
     border-color: #bce8f1;
     border-bottom-color: transparent;
 }
+
 .buttons {
     position: fixed;
     bottom: 10px;

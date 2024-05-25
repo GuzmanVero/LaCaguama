@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url('../Imagen/alcohol-1961542_1920.jpg');
+    background-image: url('../Imagen/seamless-doodle-pattern-with-beer-lobsters-and-sausages-black-and-white-illustration-with-beer-theme-icons-free-vector.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +10,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px; /* Ancho del sidebar */
+    margin-top: 60px;
+    width: 230px; /* Ancho del sidebar */
     height: 75vh; /* Altura completa de la ventana */
     background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
     padding: 20px;
@@ -21,6 +22,7 @@
     display: block;
     margin: 0 auto 20px; /* Centrar logo y dar espacio debajo */
     width: 80%; /* Ajusta el tamaño del logo */
+    border-radius:50%;
 }
 
 .menu-item {
@@ -34,11 +36,12 @@
     font-size: 16px;
     border-radius: 5px; /* Bordes redondeados */
 }
-.menu-item:hover {
+
+    .menu-item:hover {
         background-color: #a07658; /* Color al pasar el mouse */
         color: #FFF;
     }
+
 .content {
     margin-left: 220px; /* Ajusta esto según el ancho de tu sidebar */
 }
-

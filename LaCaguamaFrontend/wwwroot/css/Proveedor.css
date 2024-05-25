@@ -7,7 +7,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    list-style: none;
     font-family: Arial, sans-serif;
+    text-decoration: none;
 }
 
 .sidebar {
@@ -37,23 +39,79 @@
     border-radius: 5px;
     display: block;
 }
-.menu-item:hover {
+
+    .menu-item:hover {
         background-color: #a07658;
-}
+    }
+
 .proveedor {
+    position: absolute;
     margin-left: 200px; /* Debe ser mayor que el ancho del sidebar para evitar superposición */
-    padding: 20px;
-    height:100vh;
-    width: calc(100% - 200px);/* Ajusta el ancho restante */
+    padding-top: 90px;
+    padding-left: 30px;
+    height: 500px;
+    width: 1020px; /* Ajusta el ancho restante */
 }
 
-.table {
-    width: 80%;
-    padding:10px;
-    text-align:center;
-    background-color: white;
+table {
+    width: 100%;
+    text-align: center;
+    background: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     opacity: 0.9; /* Agrega transparencia si lo deseas */
 }
+
+    table thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Asegura que el encabezado sea legible */
+        z-index: 1;
+    }
+
+    table tbody {
+        display: block;
+        max-height: 400px; /* Ajusta según tus necesidades */
+        overflow-y: auto;
+    }
+
+.table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Asegura que las columnas tengan el mismo ancho */
+}
+
+.table thead, .table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table th, .table td {
+    padding: 10px;
+}
+/* Personalización del scrollbar para el tbody de la tabla */
+table tbody::-webkit-scrollbar {
+    width: 5px;
+}
+
+table tbody::-webkit-scrollbar-track {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+table tbody::-webkit-scrollbar-thumb {
+    background-color: saddlebrown;
+    border-radius: 50px;
+}
+
+    table tbody::-webkit-scrollbar-thumb:hover {
+        background-color: blue;
+    }
 
 .buttons {
     position: fixed;
@@ -62,6 +120,8 @@
     right: 10px;
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
 }
 
 .btn {
@@ -70,7 +130,9 @@
     color: white;
     border: none;
     cursor: pointer;
+    text-decoration:none;
 }
-.btn:hover {
+
+    .btn:hover {
         background: #555;
-}
+    }
