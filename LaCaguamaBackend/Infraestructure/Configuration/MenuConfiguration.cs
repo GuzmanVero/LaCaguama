@@ -11,8 +11,8 @@ namespace LaCaguamaBackend.Infraestructure.Configuration
             builder.ToTable("Menu");
 
             builder.HasKey(e => e.MenuID);
-            builder.HasOne(e => e.Platos).WithMany().HasForeignKey(e => e.PlatoID);
-            builder.HasOne(e => e.Bebidas).WithMany().HasForeignKey(e => e.BebidaID);
+            builder.HasOne(e => e.Platos).WithMany().HasForeignKey(e => e.Plato_ID);
+            builder.HasOne(e => e.Bebidas).WithMany().HasForeignKey(e => e.Bebida_ID);
         }
     }
 }

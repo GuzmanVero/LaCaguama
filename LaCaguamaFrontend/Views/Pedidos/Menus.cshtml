@@ -1,4 +1,4 @@
-﻿
+﻿@model MenusModel
 @{
     Layout = null;
 }
@@ -22,25 +22,22 @@
         <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
     </div>
     <div class="historial">
-        @if (Model.menus != null && Model.menus.Any())
+        @if (Model.menu != null && Model.menu.Any())
         {
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Mes</th>
-                        <th>Día</th>
-                        <th>Nombre</th>
-                        <th>Total</th>
+                        <th>Plato</th>
+                        <th>Bebida</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.menus)
+                    @foreach (var item in Model.menu)
                     {
                         <tr>
-                            <td>@item.MesFactura</td>
-                            <td>@item.DiaFactura</td>
-                            <td>@item.Nombre</td>
-                            <td>@item.Total</td>
+                            <td>@item.NombrePlato</td>
+                            <td>@item.NombreBebida</td>
+                            <td><button class="btn">Agregar</button></td>
                         </tr>
                     }
                 </tbody>

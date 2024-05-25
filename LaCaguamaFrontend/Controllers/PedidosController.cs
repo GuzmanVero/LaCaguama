@@ -47,9 +47,24 @@ namespace LaCaguamaFrontend.Controllers
             return View();
         }
 
-        public IActionResult Menus()
+        public async Task<IActionResult> Menus()
         {
-            return View();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:44347/Menu/");
+
+                var response = await client.GetAsync("GetAll/Menu");
+                if (response.IsSuccessStatusCode)
+                {
+                    var data = await response.Content.ReadAsAsync<List<MenusDto>>();
+                    var model = new MenusModel
+                    {
+                        menu = data
+                    };
+                    return View(model);
+                }
+            }
+            return View(new MenusModel());
         }
     }
 }

@@ -9,7 +9,6 @@ namespace LaCaguamaBackend.Application.Service
         public BebidaService(IBebidaRepository repository)
         {
             _repository = repository;
-
         }
 
         public async Task<List<BebidasDto>> GetAllBebidas(string nombre)

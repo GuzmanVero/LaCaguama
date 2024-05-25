@@ -37,6 +37,8 @@ builder.Services.AddTransient<IPlatoRepository, PlatoRepository>();
 builder.Services.AddTransient<IPlatoService,PlatoService>();
 builder.Services.AddTransient<IMesaRepository, MesaRepository>();
 builder.Services.AddTransient<IMesaService, MesaService>();
+builder.Services.AddTransient<IMenuRepository, MenuRepository>();
+builder.Services.AddTransient<IMenuService, MenuService>();
 
 
 

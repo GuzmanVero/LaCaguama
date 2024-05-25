@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaCaguamaBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcfc2aced27b8ff0c1e69031ff33bbbafa7d4352")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa8b5883546781dae664270e6d9550a0ae3c017b")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaCaguamaBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaCaguamaBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
