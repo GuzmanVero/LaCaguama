@@ -1,15 +1,13 @@
-﻿body, html {
+body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../Imagen/seamless-doodle-pattern-with-beer-lobsters-and-sausages-black-and-white-illustration-with-beer-theme-icons-free-vector.jpg');
+    background-image: url('../Imagen/alcohol-1961542_1920.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: Arial, sans-serif;
-    text-decoration:none;
-    list-style:none;
 }
 
 .sidebar {
@@ -44,68 +42,120 @@
         background-color: #a07658;
     }
 
-.main-content {
-    margin-left: 90px;
+.form-container {
+    margin-left: 220px; /* Offset para no solapar el sidebar */
     padding: 20px;
-    min-height: 100vh;
-}
-
-    .main-content h2 {
-        text-align: center;
-        font-size: 50px;
-        font-weight: 400;
-        color: snow;
-    }
-
-.category-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centra el formulario en la pantalla horizontalmente */
 }
 
-.panel.with-nav-tabs {
-    width: 600px;
+.form-Fecha {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos del formulario */
+    gap: 10px; /* Espacio entre los campos del formulario */
 }
 
-    .panel.with-nav-tabs .panel-heading {
-        width: 600px;
-        padding: 5px 5px 0 5px;
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    .panel.with-nav-tabs .nav-tabs {
-        border-bottom: none;
-        width: 600px
-    }
-
-    .panel.with-nav-tabs .nav-justified {
-        margin-bottom: -1px;
-    }
-
-.with-nav-tabs.panel-info .nav-tabs > li > a,
-.with-nav-tabs.panel-info .nav-tabs > li > a:hover,
-.with-nav-tabs.panel-info .nav-tabs > li > a:focus {
-    color: #31708f;
+.input-group {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos dentro de cada grupo de input */
+    gap: 5px; /* Espacio entre la etiqueta y el input */
 }
 
-    .with-nav-tabs.panel-info .nav-tabs > .open > a,
-    .with-nav-tabs.panel-info .nav-tabs > .open > a:hover,
-    .with-nav-tabs.panel-info .nav-tabs > .open > a:focus,
-    .with-nav-tabs.panel-info .nav-tabs > li > a:hover,
-    .with-nav-tabs.panel-info .nav-tabs > li > a:focus {
-        color: #31708f;
-        background-color: #bce8f1;
-        border-color: transparent;
+    .input-group label {
+        margin-right: 5px; /* Espacio a la derecha de cada etiqueta */
     }
 
-.with-nav-tabs.panel-info .nav-tabs > li.active > a,
-.with-nav-tabs.panel-info .nav-tabs > li.active > a:hover,
-.with-nav-tabs.panel-info .nav-tabs > li.active > a:focus {
-    color: #31708f;
-    background-color: #fff;
-    border-color: #bce8f1;
-    border-bottom-color: transparent;
+    .input-group input[type="date"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 140px; /* Ancho específico para los inputs de fecha */
+    }
+
+.form-Fecha button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+    .form-Fecha button:hover {
+        background-color: #45a049;
+    }
+
+.historial {
+    margin-left: 220px; /* Debe ser mayor que el ancho del sidebar para evitar superposición */
+    padding: 20px;
+    height: 100px;
+    width: 1000px; /* Ajusta el ancho restante */
+     
+}
+table {
+    width: 100%;
+    text-align: center;
+    background: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    opacity: 0.9; /* Agrega transparencia si lo deseas */
+}
+
+    table thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Asegura que el encabezado sea legible */
+        z-index: 1;
+    }
+
+    table tbody {
+        display: block;
+        max-height: 400px; /* Ajusta según tus necesidades */
+        overflow-y: auto;
+    }
+
+.table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Asegura que las columnas tengan el mismo ancho */
+}
+
+.table thead, .table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table th, .table td {
+    padding: 10px;
+}
+/* Personalización del scrollbar para el tbody de la tabla */
+table tbody::-webkit-scrollbar {
+    width: 5px;
+}
+
+table tbody::-webkit-scrollbar-track {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+table tbody::-webkit-scrollbar-thumb {
+    background-color: saddlebrown;
+    border-radius: 50px;
+}
+
+    table tbody::-webkit-scrollbar-thumb:hover {
+        background-color: blue;
+    }
 
 .buttons {
     position: fixed;
@@ -113,7 +163,9 @@
     left: 220px;
     right: 10px;
     display: flex;
+    border-radius:8px;
     justify-content: space-between;
+    text-decoration:none;
 }
 
 .btn {
