@@ -1,4 +1,4 @@
-﻿body, html {
+body, html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -149,4 +149,5 @@ table tbody::-webkit-scrollbar-thumb {
     background-color: #fff;
     border-color: #bce8f1;
 }
+
 
