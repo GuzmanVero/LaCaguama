@@ -26,5 +26,11 @@ namespace LaCaguamaFrontend.Controllers
             return View(new HistorialFacturaModel());
         }
 
+        public IActionResult Factura(int tableId)
+        {
+            ViewBag.TableId = tableId;
+            return View();
+        }
+
     }
 }

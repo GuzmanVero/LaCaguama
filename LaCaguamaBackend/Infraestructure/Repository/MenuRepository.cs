@@ -21,7 +21,8 @@ namespace LaCaguamaBackend.Infraestructure.Repository
                         select new MenuDto
                         {
                             NombreBebida = i.NombreBebida,
-                            NombrePlato = p.Nombre_Plato
+                            NombrePlato = p.Nombre_Plato,
+                            Precio = b.PrecioUnitario + p.Precio_Unitario
                         };
             return await query.ToListAsync();
         }

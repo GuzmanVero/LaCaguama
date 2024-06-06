@@ -4,5 +4,6 @@
     {
         public string NombreBebida { get; set; }
         public string NombrePlato { get; set; }
+        public decimal Precio { get; set; }
     }
 }

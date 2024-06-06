@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
     ViewData["Title"] = "Pedidos";
 }
@@ -10,6 +9,29 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>VisualizarPedido</title>
+    <style>
+        .btn {
+            margin: 5px;
+        }
+
+        .table-container {
+            margin-bottom: 20px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .table, .table th, .table td {
+                border: 1px solid black;
+            }
+
+                .table th, .table td {
+                    padding: 8px;
+                    text-align: left;
+                }
+    </style>
 </head>
 <body>
     <div id="ordersContainer">
@@ -31,10 +53,14 @@
 
                     // Asegurarse de que tableOrders sea un array
                     if (Array.isArray(tableOrders)) {
+                        // Crear el contenedor de la tabla
+                        const tableContainer = document.createElement('div');
+                        tableContainer.classList.add('table-container');
+
                         // Crear el título de la mesa
                         const title = document.createElement('h3');
                         title.innerText = 'Mesa ' + tableId;
-                        container.appendChild(title);
+                        tableContainer.appendChild(title);
 
                         // Crear la tabla
                         const table = document.createElement('table');
@@ -42,32 +68,72 @@
 
                         // Crear el encabezado de la tabla
                         const thead = document.createElement('thead');
-                        thead.innerHTML = `<tr><th>Plato</th><th>Bebida</th></tr>`;
+                        thead.innerHTML = `<tr><th>Plato</th><th>Bebida</th><th>Precio</th><th>Acciones</th></tr>`;
                         table.appendChild(thead);
 
                         // Crear el cuerpo de la tabla
                         const tbody = document.createElement('tbody');
-                        tableOrders.forEach(order => {
-                            const row = `<tr>
-                                    <td>${order.plato}</td>
-                                    <td>${order.bebida}</td>
-                                </tr>`;
-                            tbody.innerHTML += row;
+                        tableOrders.forEach((order, index) => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                        <td>${order.plato}</td>
+                                        <td>${order.bebida}</td>
+                                        <td>${order.precio}</td>
+                                        <td>
+                                            <button class="btn" onclick="deleteOrder(${tableId}, ${index})">Eliminar</button>
+                                        </td>
+                                    `;
+                            tbody.appendChild(row);
                         });
                         table.appendChild(tbody);
 
-                        // Agregar la tabla al contenedor
-                        container.appendChild(table);
+                        // Agregar la tabla y los botones al contenedor de la tabla
+                        tableContainer.appendChild(table);
+
+                        // Agregar botones de Ver Menú y Generar Factura
+                        const menuButton = document.createElement('a');
+                        menuButton.href = `@Url.Action("Menus", "Pedidos")?tableId=${tableId}`;
+                        menuButton.classList.add('btn');
+                        menuButton.innerText = 'Ver Menú';
+                        tableContainer.appendChild(menuButton);
+
+                        const facturaButton = document.createElement('a');
+                        facturaButton.href = `@Url.Action("Factura", "Factura")?tableId=${tableId}`;
+                        facturaButton.classList.add('btn');
+                        facturaButton.innerText = 'Generar Factura';
+                        tableContainer.appendChild(facturaButton);
+
+                        // Agregar el contenedor de la tabla al contenedor principal
+                        container.appendChild(tableContainer);
                     } else {
                         console.error(`tableOrders for tableId ${tableId} is not an array`);
                     }
                 }
             }
         });
+
+        function deleteOrder(tableId, orderIndex) {
+            // Obtener los pedidos del localStorage
+            let orders = JSON.parse(localStorage.getItem('orders')) || {};
+
+            // Eliminar el pedido de la mesa
+            if (Array.isArray(orders[tableId])) {
+                orders[tableId].splice(orderIndex, 1);
+                if (orders[tableId].length === 0) {
+                    delete orders[tableId];
+                }
+                // Guardar los pedidos actualizados en el localStorage
+                localStorage.setItem('orders', JSON.stringify(orders));
+
+                // Recargar la página para reflejar los cambios
+                location.reload();
+            } else {
+                console.error(`No orders found for tableId ${tableId}`);
+            }
+        }
     </script>
     <div class="buttons">
         <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
-        <a href="@Url.Action("Menus", "Pedidos")" class="btn">Ver Menu</a>
         <a href="@Url.Action("Mesas", "Pedidos")" class="btn">Regresar</a>
     </div>
 </body>

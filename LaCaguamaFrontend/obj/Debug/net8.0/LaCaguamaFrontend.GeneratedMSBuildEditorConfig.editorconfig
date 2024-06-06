@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\marce\source\repos\LaCaguama\LaCaguamaFrontend
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Factura/Factura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxGYWN0dXJhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/marce/source/repos/LaCaguama/LaCaguamaFrontend/Views/Factura/Historial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxIaXN0b3JpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

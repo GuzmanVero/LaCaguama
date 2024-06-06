@@ -9,8 +9,27 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-<link rel="stylesheet" href="~/css/Menus.css" />
+    <link rel="stylesheet" href="~/css/Menus.css" />
     <title>Menus</title>
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .table, .table th, .table td {
+                border: 1px solid black;
+            }
+
+                .table th, .table td {
+                    padding: 8px;
+                    text-align: left;
+                }
+
+        .btn {
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar">
@@ -32,6 +51,8 @@
                     <tr>
                         <th>Plato</th>
                         <th>Bebida</th>
+                        <th>Precio</th>
+                        <th>Acción</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,7 +61,8 @@
                         <tr>
                             <td>@item.NombrePlato</td>
                             <td>@item.NombreBebida</td>
-                            <td><button class="btn" onclick="addOrder(@tableId, '@item.NombrePlato', '@item.NombreBebida')">Agregar</button></td>
+                            <td>@item.Precio</td>
+                            <td><button class="btn" onclick="addOrder(@tableId, '@item.NombrePlato', '@item.NombreBebida', '@item.Precio')">Agregar</button></td>
                         </tr>
                     }
                 </tbody>
@@ -52,7 +74,7 @@
         }
     </div>
     <script>
-        function addOrder(tableId, plato, bebida) {
+        function addOrder(tableId, plato, bebida, precio) {
             // Obtener los pedidos actuales del localStorage
             let orders = JSON.parse(localStorage.getItem('orders')) || {};
 
@@ -61,18 +83,18 @@
                 orders[tableId] = [];
             }
             // Agregar el nuevo pedido
-            orders[tableId].push({ plato: plato, bebida: bebida });
+            orders[tableId].push({ plato: plato, bebida: bebida, precio: parseFloat(precio) });
 
             // Guardar los pedidos actualizados en el localStorage
             localStorage.setItem('orders', JSON.stringify(orders));
 
-            //alert('Pedido agregado: ' + plato + ' con ' + bebida + ' para la mesa ' + tableId);
+            alert('Pedido agregado: ' + plato + ' con ' + bebida + ' para la mesa ' + tableId);
         }
     </script>
 
     <div class="buttons">
         <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
-        <a href="@Url.Action("VisualizarPedido", "Pedidos")" class="btn">Ver Pedido</a>
+        <a href="@Url.Action("VisualizarPedido", "Pedidos")" class="btn">Ver Pedidos</a>
         <a href="@Url.Action("Mesas", "Pedidos")" class="btn">Regresar</a>
     </div>
 </body>

@@ -1,0 +1,119 @@
+﻿@using System
+@model Dictionary<int, List<MenusModel>>
+
+@{
+    Layout = null;
+    var currentDate = DateTime.Now;
+    int tableId = Convert.ToInt32(ViewBag.TableId);
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Factura</title>
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .table, .table th, .table td {
+                border: 1px solid black;
+            }
+
+                .table th, .table td {
+                    padding: 8px;
+                    text-align: left;
+                }
+
+        .paid {
+            background-color: #d4edda; /* Fondo verde claro para pedidos pagados */
+        }
+
+        .message {
+            background-color: #f8d7da; /* Fondo rojo claro para el mensaje */
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="messageContainer"></div>
+    <h1>Factura</h1>
+    <p>Fecha: @currentDate.ToString("dd/MM/yyyy")</p>
+    <h2>Mesa @tableId</h2>
+
+    <div id="invoiceContainer">
+        <!-- La factura se agregará aquí mediante JavaScript -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Obtener los pedidos del localStorage
+            let orders = JSON.parse(localStorage.getItem('orders')) || {};
+            let tableOrders = orders[@tableId] || [];
+            let total = 0;
+
+            // Referencia al contenedor de facturas
+            const container = document.getElementById('invoiceContainer');
+            const messageContainer = document.getElementById('messageContainer');
+
+            if (Array.isArray(tableOrders)) {
+                // Crear la tabla
+                const table = document.createElement('table');
+                table.classList.add('table', 'table-striped');
+
+                // Crear el encabezado de la tabla
+                const thead = document.createElement('thead');
+                thead.innerHTML = `<tr><th>Plato</th><th>Bebida</th><th>Precio</th></tr>`;
+                table.appendChild(thead);
+
+                // Crear el cuerpo de la tabla
+                const tbody = document.createElement('tbody');
+                tableOrders.forEach(order => {
+                    const row = document.createElement('tr');
+                    total += order.precio;
+                    row.innerHTML = `
+                                <td>${order.plato}</td>
+                                <td>${order.bebida}</td>
+                                <td>${order.precio}</td>
+                            `;
+                    tbody.appendChild(row);
+                });
+                table.appendChild(tbody);
+
+                // Agregar el total
+                const totalRow = document.createElement('tr');
+                totalRow.innerHTML = `<td colspan="2"><strong>Total</strong></td><td>${total}</td>`;
+                table.appendChild(totalRow);
+
+                // Agregar la tabla al contenedor
+                container.appendChild(table);
+
+                // Mostrar mensaje de pedido pagado
+                const message = document.createElement('div');
+                message.classList.add('message');
+                message.innerText = `Pedido pagado para la mesa ${@tableId}`;
+                messageContainer.appendChild(message);
+
+                // Cambiar el fondo de los pedidos a pagados
+                table.classList.add('paid');
+
+                // Eliminar pedidos de localStorage
+                delete orders[@tableId];
+                localStorage.setItem('orders', JSON.stringify(orders));
+            } else {
+                console.error(`tableOrders for tableId ${tableId} is not an array`);
+            }
+        });
+    </script>
+    <div class="buttons">
+        <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
+    </div>
+</body>
+</html>
