@@ -1,7 +1,7 @@
-﻿.login-container {
-    background: url('../Imagen/alcohol-1961542_1920.jpg') no-repeat center center;
+.login-container {
+    background: url('../Imagen/seamless-doodle-pattern-with-beer-lobsters-and-sausages-black-and-white-illustration-with-beer-theme-icons-free-vector.jpg') no-repeat;
     background-size: cover;
-    height: 97vh;
+    height: 98vh;
     display: flex;
     justify-content: center;
     align-items: center;
