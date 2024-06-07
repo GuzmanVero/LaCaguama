@@ -1,4 +1,4 @@
-﻿@model MenusModel
+@model MenusModel
 @{
     Layout = null;
     int tableId = ViewBag.TableId;
@@ -15,15 +15,17 @@
         .table {
             width: 100%;
             border-collapse: collapse;
+            text-align:center;
         }
 
             .table, .table th, .table td {
-                border: 1px solid black;
+                text-align: center;
             }
 
                 .table th, .table td {
-                    padding: 8px;
+                    padding: 5px;
                     text-align: left;
+                    text-align: center;
                 }
 
         .btn {
@@ -34,7 +36,7 @@
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="../Imagen/alcohol-1961542_1920.jpg" alt="La Caguama Logo">
+            <img src="../Imagen/Picsart_24-05-23_21-20-11-938.png" alt="La Caguama Logo">
         </div>
         <a href="@Url.Action("Menu", "Menu")" class="menu-item">Menú</a>
         <a href="@Url.Action("Mesas", "Pedidos")" class="menu-item">Ordenes</a>
@@ -86,7 +88,9 @@
             orders[tableId].push({ plato: plato, bebida: bebida, precio: parseFloat(precio) });
 
             // Guardar los pedidos actualizados en el localStorage
-            localStorage.setItem('orders', JSON.stringify(orders));          
+            localStorage.setItem('orders', JSON.stringify(orders));
+
+            alert('Pedido agregado: ' + plato + ' con ' + bebida + ' para la mesa ' + tableId);
         }
     </script>
 
