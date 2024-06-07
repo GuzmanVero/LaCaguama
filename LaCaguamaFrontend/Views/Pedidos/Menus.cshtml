@@ -86,9 +86,7 @@
             orders[tableId].push({ plato: plato, bebida: bebida, precio: parseFloat(precio) });
 
             // Guardar los pedidos actualizados en el localStorage
-            localStorage.setItem('orders', JSON.stringify(orders));
-
-            alert('Pedido agregado: ' + plato + ' con ' + bebida + ' para la mesa ' + tableId);
+            localStorage.setItem('orders', JSON.stringify(orders));          
         }
     </script>
 

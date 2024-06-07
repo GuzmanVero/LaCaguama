@@ -75,27 +75,30 @@ namespace LaCaguamaFrontend.Controllers
             return View(new ProveedorModel());
         }
 
-        [HttpGet]
-        public IActionResult Agregar()
+        public async Task<IActionResult> Agregar()
         {
-            return View(new InventarioBebidaProveedorDto());
-        }
-        [HttpPost]
-        public async Task<IActionResult> Agregar(InventarioBebidaProveedorDto bebida)
-        {
-            var client = _httpClientFactory.CreateClient("API"); // Obtener el cliente configurado
-            var response = await client.PostAsJsonAsync("Bebida/InsertBebida", bebida);
-            if (response.IsSuccessStatusCode)
+            using (var client = new HttpClient())
             {
-                // Lógica en caso de éxito
-                return RedirectToAction("Inventario"); // Redirecciona a la vista deseada tras el éxito
-            }
-            else
-            {
-                // Manejar errores
-                return View(bebida); // Devuelve a la vista original en caso de error
-            }
-        }
+                client.BaseAddress = new Uri("https://localhost:44347/");
 
+                // Preparar todas las llamadas API
+                var ProveedorTask = client.GetAsync("Proveedor/GetAll/Names");
+                var CategoriaTask = client.GetAsync("Categoria/GetAll/Tipo");
+
+                await Task.WhenAll(ProveedorTask, CategoriaTask);
+
+                var Proveedor = await ProveedorTask.Result.Content.ReadAsAsync<List<ProveedorDto>>();
+                var Categoria = await CategoriaTask.Result.Content.ReadAsAsync<List<CategoriaDto>>();
+
+                var model = new ProveedorModel
+                {
+                    Proveedores = Proveedor.Select(p => new ProveedorDto { Nombre = p.Nombre }).ToList(),
+                    Categoria = Categoria.Select(c => new CategoriaDto { Tipo = c.Tipo }).ToList()
+
+                };
+
+                return View(model);
+            }
+        }
     }
 }

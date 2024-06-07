@@ -1,3 +1,4 @@
+@model ProveedorModel
 @{
     Layout = null;
 }
@@ -26,16 +27,69 @@
     <h1>Agregar Bebida</h1>
     <div class="main-content">
         <div class="formu">
-        <form method="post" action="@Url.Action("Agregar", "Imventario")" class="form-bebida">
-            <input type="text" name="nombreBebida" placeholder="Nombre de la Bebida" required>
-            <input type="number" name="stock" placeholder="Stock" required>
-            <input type="text" name="nombreProveedor" placeholder="Nombre del Proveedor" required>
-            <input type="text" name="tipoCategoria" placeholder="Tipo de Categoría" required>
-            <input type="text" name="precioUnitario" placeholder="Precio Unitario" required>
-            <button type="submit">Guardar</button>
-        </form>
+            <form id="bebidaForm" class="form-bebida">
+                <input type="text" id="nombreBebida" name="nombreBebida" placeholder="Nombre de la Bebida" required>
+                <input type="number" id="stock" name="stock" placeholder="Stock" required>
+                <select id="nombreProveedor" name="nombreProveedor" required>
+                    <option value="" disabled selected>Seleccione un Proveedor</option>
+                    @foreach (var proveedor in Model.Proveedores)
+                    {
+                        <option value="@proveedor.Nombre">@proveedor.Nombre</option>
+                    }
+                </select>
+                <select id="tipoCategoria" name="tipoCategoria" required>
+                    <option value="" disabled selected>Seleccione una Categoría</option>
+                    @foreach (var categoria in Model.Categoria)
+                    {
+                        <option value="@categoria.Tipo">@categoria.Tipo</option>
+                    }
+                </select>
+                <input type="number" step="0.01" id="precioUnitario" name="precioUnitario" placeholder="Precio Unitario" required>
+                <button type="submit">Guardar</button>
+            </form>
         </div>
     </div>
+    <script>
+        document.getElementById('bebidaForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevenir el envío del formulario
+
+            // Capturar los datos del formulario
+            const nombreBebida = document.getElementById('nombreBebida').value;
+            const stock = document.getElementById('stock').value;
+            const nombreProveedor = document.getElementById('nombreProveedor').value;
+            const tipoCategoria = document.getElementById('tipoCategoria').value;
+            const precioUnitario = document.getElementById('precioUnitario').value;
+    
+
+            // Definir la URL de la API
+            const apiUrl = 'https://localhost:44347/';
+
+            // Realizar la solicitud POST a la API
+            fetch(`${apiUrl}Bebida/InsertBebida?proveedor=${nombreProveedor}&categoria=${tipoCategoria}&nombreBebida=${nombreBebida}&stock=${stock}&precioUnitario=${precioUnitario}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                //body: JSON.stringify(data)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error('Error en la solicitud');
+                    }
+                })
+                .then(data => {
+                    alert('Bebida agregada exitosamente');
+                    // Limpiar el formulario
+                    document.getElementById('bebidaForm').reset();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error al agregar la bebida');
+                });
+        });
+    </script>
     <div class="buttons">
         <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
     </div>
