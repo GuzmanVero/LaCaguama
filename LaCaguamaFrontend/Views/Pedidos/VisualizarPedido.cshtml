@@ -1,4 +1,4 @@
-﻿@{
+@{
     Layout = null;
     ViewData["Title"] = "Pedidos";
 }
@@ -9,29 +9,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>VisualizarPedido</title>
-    <style>
-        .btn {
-            margin: 5px;
-        }
-
-        .table-container {
-            margin-bottom: 20px;
-        }
-
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-            .table, .table th, .table td {
-                border: 1px solid black;
-            }
-
-                .table th, .table td {
-                    padding: 8px;
-                    text-align: left;
-                }
-    </style>
+    <link href="~/css/VisualizarPedido.css" rel="stylesheet" />
 </head>
 <body>
     <div id="ordersContainer">
@@ -80,7 +58,7 @@
                                         <td>${order.bebida}</td>
                                         <td>${order.precio}</td>
                                         <td>
-                                            <button class="btn" onclick="deleteOrder(${tableId}, ${index})">Eliminar</button>
+                                            <button class="btn btn-delete" onclick="deleteOrder(${tableId}, ${index})">Eliminar</button>
                                         </td>
                                     `;
                             tbody.appendChild(row);
