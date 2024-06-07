@@ -1,4 +1,4 @@
-﻿@model HistorialFacturaModel
+@model HistorialFacturaModel
 @{
     Layout = null;
 }
@@ -14,7 +14,7 @@
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="../Imagen/alcohol-1961542_1920.jpg" alt="La Caguama Logo">
+            <img src="../Imagen/Picsart_24-05-23_21-20-11-938.png" alt="La Caguama Logo">
         </div>
         <a href="@Url.Action("Menu", "Menu")" class="menu-item">Menú</a>
         <a href="@Url.Action("Mesas", "Pedidos")" class="menu-item">Ordenes</a>
@@ -23,96 +23,50 @@
         <a href="@Url.Action("Login", "Login")" class="menu-item">Salir</a>
     </div>
     <div class="form-container">
-        <form id="fechaForm" class="form-Fecha">
+        <form class="form-Fecha">
             <div class="input-group">
                 <label for="fechaInicial">Fecha Inicial</label>
-                <input type="date" id="fechaInicial" name="fechaInicial" required>
+                <input type="date" id="fechaInicial" name="fechaInicial">
             </div>
             <div class="input-group">
                 <label for="fechaFinal">Fecha Final</label>
-                <input type="date" id="fechaFinal" name="fechaFinal" required>
+                <input type="date" id="fechaFinal" name="fechaFinal">
             </div>
             <button type="submit">Consultar</button>
         </form>
     </div>
     <div class="historial">
-        <div id="tablaHistorial">
-            @if (Model.Historial != null && Model.Historial.Any())
-            {
-                <div class="table-container">
-                    <table class="table table-striped">
-                        <thead>
+        @if (Model.Historial != null && Model.Historial.Any())
+        {
+            <div class="table-container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Mes</th>
+                            <th>Día</th>
+                            <th>Nombre</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Historial)
+                        {
                             <tr>
-                                <th>Mes</th>
-                                <th>Día</th>
-                                <th>Nombre</th>
-                                <th>Total</th>
+                                <td>@item.MesFactura</td>
+                                <td>@item.DiaFactura</td>
+                                <td>@item.Nombre</td>
+                                <td>@item.Total</td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var item in Model.Historial)
-                            {
-                                <tr>
-                                    <td>@item.MesFactura</td>
-                                    <td>@item.DiaFactura</td>
-                                    <td>@item.Nombre</td>
-                                    <td>@item.Total</td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            }
-            else
-            {
-                <p>No hay datos disponibles.</p>
-            }
-        </div>
-    </div>
-    <script>
-        function formatFecha(fecha) {
-            const [yyyy, mm, dd] = fecha.split('-');
-            return `${yyyy}-${mm}-${dd}`;
+                        }
+                    </tbody>
+                </table>
+            </div>
         }
-
-        document.getElementById('fechaForm').addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevenir el envío del formulario
-
-            // Capturar las fechas
-            const fechaInicial = document.getElementById('fechaInicial').value;
-            const fechaFinal = document.getElementById('fechaFinal').value;
-
-            const fechaInicialFormatted = formatFecha(fechaInicial);
-            const fechaFinalFormatted = formatFecha(fechaFinal);
-
-            // Definir la URL de la API
-            const apiUrl = `https://localhost:44347/Factura/GetAll/Fechas?inicio=${fechaInicialFormatted}&final=${fechaFinalFormatted}`;
-
-            // Realizar la solicitud AJAX para obtener los datos filtrados
-            fetch(apiUrl, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-                .then(response => response.json())
-                .then(data => {
-                    // Generar el HTML de la tabla con los datos obtenidos
-                    let tableHtml = '<div class="table-container"><table class="table table-striped"><thead><tr><th>Mes</th><th>Día</th><th>Nombre</th><th>Total</th></tr></thead><tbody>';
-                    data.forEach(item => {
-                        tableHtml += `<tr><td>${item.mesFactura}</td><td>${item.diaFactura}</td><td>${item.nombre}</td><td>${item.total}</td></tr>`;
-                    });
-                    tableHtml += '</tbody></table></div>';
-
-                    // Insertar el HTML generado en el div con id "tablaHistorial"
-                    document.getElementById('tablaHistorial').innerHTML = tableHtml;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('Error al consultar el historial');
-                });
-        });
-    </script>
+        else
+        {
+            <p>No hay datos disponibles.</p>
+        }
+    </div>
     <div class="buttons">
         <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
     </div>
