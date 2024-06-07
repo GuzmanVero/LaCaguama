@@ -4,15 +4,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0; /* Elimina los márgenes predeterminados */
+    font-family: 'Arial', sans-serif;
 }
 
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    margin-top: 60px;
+    margin-top: 0px;
     width: 230px; /* Ancho del sidebar */
-    height: 75vh; /* Altura completa de la ventana */
+    height: 100vh; /* Altura completa de la ventana */
     background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
     padding: 20px;
     box-sizing: border-box;
@@ -20,7 +21,7 @@ body {
 
 .logo img {
     display: block;
-    margin: 0 auto 20px; /* Centrar logo y dar espacio debajo */
+    margin: 0 auto 60px; /* Centrar logo y dar espacio debajo */
     width: 80%; /* Ajusta el tamaño del logo */
     border-radius:50%;
 }
