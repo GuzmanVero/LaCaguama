@@ -1,4 +1,4 @@
-﻿@using System
+@using System
 @model Dictionary<int, List<MenusModel>>
 
 @{
@@ -13,43 +13,23 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Factura</title>
-    <style>
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+    <link href="~/css/Factura.css" rel="Stylesheet" />
 
-            .table, .table th, .table td {
-                border: 1px solid black;
-            }
-
-                .table th, .table td {
-                    padding: 8px;
-                    text-align: left;
-                }
-
-        .paid {
-            background-color: #d4edda; /* Fondo verde claro para pedidos pagados */
-        }
-
-        .message {
-            background-color: #f8d7da; /* Fondo rojo claro para el mensaje */
-            padding: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-            border: 1px solid #f5c6cb;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
-    <div id="messageContainer"></div>
-    <h1>Factura</h1>
-    <p>Fecha: @currentDate.ToString("dd/MM/yyyy")</p>
-    <h2>Mesa @tableId</h2>
+    <div class="container">
+        <div id="messageContainer"></div>
+        <h1>Factura</h1>
+        <p>Fecha: @currentDate.ToString("dd/MM/yyyy")</p>
+        <h2>Mesa @tableId</h2>
 
-    <div id="invoiceContainer">
-        <!-- La factura se agregará aquí mediante JavaScript -->
+        <div id="invoiceContainer">
+            <!-- La factura se agregará aquí mediante JavaScript -->
+        </div>
+
+        <div class="buttons">
+            <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
+        </div>
     </div>
 
     <script>
@@ -112,8 +92,5 @@
             }
         });
     </script>
-    <div class="buttons">
-        <a href="@Url.Action("Index", "Home")" class="btn">Inicio</a>
-    </div>
 </body>
 </html>
